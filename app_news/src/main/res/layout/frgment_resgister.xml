@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:padding="10dp"
+    tools:context="com.feicui.edu.highpart.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_regist_username"
+        android:text="用  户  名:"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/et_regist_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_regist_name"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tv_regist_email"
+        android:hint="请输入昵称" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_regist_email"
+        android:text="邮箱地址:"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/et_regist_email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/et_regist_email"
+        android:layout_toRightOf="@id/tv_regist_email"
+        android:layout_below="@+id/et_regist_name"
+        android:hint="请输入正确的邮箱地址" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_regist_pwd"
+        android:text="密        码:"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/et_regist_pwd"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_regist_pwd"
+        android:layout_below="@+id/et_regist_email"
+        android:layout_toRightOf="@+id/tv_regist_email"
+        android:hint="请输入注册密码" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:background="@color/colorAccent"
+        android:id="@+id/btn_register"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/et_regist_pwd"
+       />
+
+
+
+</RelativeLayout>
